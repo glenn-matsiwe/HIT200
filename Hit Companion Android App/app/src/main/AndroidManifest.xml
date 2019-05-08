@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hitcompanion">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".department.dept_notifications"></activity>
+        <activity android:name=".department.dept_details" />
+        <activity android:name=".department.deptList" />
+        <activity android:name=".clubs.club_notification" />
+        <activity android:name=".clubs.club_details" />
+        <activity android:name=".clubs.clubsNotification" />
+        <activity android:name=".clubs.clubsList" />
+        <activity android:name=".blog.answers" />
+        <activity android:name=".blog.answerQuestion" />
+        <activity android:name=".blog.question_detail" />
+        <activity android:name=".blog.ask" />
+        <activity android:name=".map.map_page" />
+        <activity android:name=".department.department_home" />
+        <activity android:name=".clubs.clubs_home" />
+        <activity android:name=".blog.blog_home" />
+        <activity android:name=".home_page" />
+        <activity android:name=".log_in" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
